@@ -73,14 +73,7 @@
   };
 
 
-  programs.git = {
-    enable = true;
-    config = {
-      user.name = "chozix";
-      user.email = "venechozix@gmail.com";
-      init.defaultBranch = "main";
-    };
-  };
+
 
 
   programs.firefox.enable = true;
