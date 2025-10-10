@@ -1,4 +1,4 @@
-{ config , pkgs, ...}:
+{ config , pkgs, inputs, ...}:
 
 {
   home.username = "chozix";
@@ -25,5 +25,6 @@
 
   home.packages = with pkgs; [
     git-credential-manager
+    inputs.zen-browser.packages."${system}".default
   ];
 }
