@@ -4,6 +4,8 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./desktops/plasma.nix
+      ./desktops/niri.nix
     ];
 
   # Bootloader.
@@ -14,6 +16,9 @@
   networking.networkmanager.enable = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  nix.maxSystemGenerations = 5;
+  nix.maxUserGenerations = 5;
 
   # Set your time zone.
   time.timeZone = "America/Montevideo";
@@ -37,9 +42,9 @@
   # You can disable this if you're only using the Wayland session.
   services.xserver.enable = true;
 
-  # Enable the KDE Plasma Desktop Environment.
+  # Enable sddm
   services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
+
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -47,8 +52,6 @@
     variant = "";
   };
 
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
 
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
@@ -71,12 +74,6 @@
     #  thunderbird
     ];
   };
-
-
-
-
-
-  programs.firefox.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 
