@@ -73,16 +73,22 @@
 
 
   #Syncthing
-  services.syncthing = {
-    enable = true;
-  };
+  services = {
+    syncthing = {
+        enable = true;
+        group = "syncthing";
+        user = "chozix";
+        dataDir = "/home/chozix/";    # Default folder for new synced folders
+        configDir = "/home/myusername/.config/syncthing";   # Folder for Syncthing's settings and keys
+    };
+};
 
 
 
   users.users.chozix = {
     isNormalUser = true;
     description = "Jesus";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "syncthing" ];
     packages = with pkgs; [
       kdePackages.kate
     #  thunderbird
