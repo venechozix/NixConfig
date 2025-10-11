@@ -23,7 +23,7 @@
   };
 
   home.packages = with pkgs; [
-    git-credential-manager
     inputs.zen-browser.packages."${system}".default
+    sonobus
   ];
 }
