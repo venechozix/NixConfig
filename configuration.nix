@@ -66,9 +66,9 @@
     enable = true;
     remotePlay.openFirewall = true;
     dedicatedServer.openFirewall = true;
-    estraCompatPackages = {
-      proton-ge-bin;
-    };
+    extraCompatPackages =  with pkgs; [
+      proton-ge-bin
+    ];
   };
 
   users.users.chozix = {
