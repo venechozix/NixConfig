@@ -88,7 +88,7 @@
 
   hardware.opentabletdriver = {
     enable = true;
-    daemon.enable;
+    daemon.enable = true;
   };
 
   #Syncthing
