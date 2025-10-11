@@ -106,7 +106,7 @@
     ciscoPacketTracer8
     #utils
     vesktop
-    keepass
+    keepassxc
     #gaming
     protonup-qt
   ];
