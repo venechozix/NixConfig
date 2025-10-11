@@ -71,6 +71,14 @@
     ];
   };
 
+
+  #Syncthing
+  services.syncthing = {
+    enable = true;
+  };
+
+
+
   users.users.chozix = {
     isNormalUser = true;
     description = "Jesus";
@@ -80,6 +88,9 @@
     #  thunderbird
     ];
   };
+
+
+
 
   nixpkgs.config.allowUnfree = true;
 
@@ -91,8 +102,11 @@
     xclip
     bat
     tealdeer
+    #school
+    ciscoPacketTracer8
     #utils
     vesktop
+    keepass
     #gaming
     protonup-qt
   ];
