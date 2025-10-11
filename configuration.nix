@@ -67,7 +67,7 @@
     remotePlay.openFirewall = true;
     dedicatedServer.openFirewall = true;
     estraCompatPackages = {
-      proton-ge-bin
+      proton-ge-bin;
     };
   };
 
