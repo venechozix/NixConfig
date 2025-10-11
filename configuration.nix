@@ -12,13 +12,10 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "nixpc"; # Define your hostname.
+  networking.hostName = "nixos"; # Define your hostname.
   networking.networkmanager.enable = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
-  nix.maxSystemGenerations = 5;
-  nix.maxUserGenerations = 5;
 
   # Set your time zone.
   time.timeZone = "America/Montevideo";

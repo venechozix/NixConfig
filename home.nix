@@ -11,7 +11,6 @@
     userEmail = "venechozix@gmail.com";
     extraConfig ={
       init.defaultBranch = "main";
-      credential.helper = "manager-core";
     };
   };
 
