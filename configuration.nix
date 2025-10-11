@@ -85,6 +85,12 @@
   };
 
 
+
+  hardware.opentabletdriver = {
+    enable = true;
+    daemon.enable;
+  };
+
   #Syncthing
   services = {
     syncthing = {
@@ -128,6 +134,7 @@
     keepassxc
     #gaming
     protonup-qt
+    opentabletdriver
   ];
 
 
