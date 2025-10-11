@@ -61,7 +61,16 @@
   
   };
 
-  
+  #Steam
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true;
+    dedicatedServer.openFirewall = true;
+    estraCompatPackages = {
+      proton-ge-bin
+    };
+  };
+
   users.users.chozix = {
     isNormalUser = true;
     description = "Jesus";
@@ -75,14 +84,20 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
+    #dev
     vim
     wget
     alacritty
     xclip
     bat
     tealdeer
+    #utils
     vesktop
+    #gaming
+    protonup-qt
   ];
+
+
 
   system.stateVersion = "25.05"; # Did you read the comment?
 
