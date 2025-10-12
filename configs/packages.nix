@@ -3,6 +3,11 @@
 
     programs.zsh.enable = true;
 
+    fonts.packages = with pkgs; [
+        jetbrains-mono
+        nerdfonts
+    ];
+
     environment.systemPackages = with pkgs; [
         #dev
         vim
