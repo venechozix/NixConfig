@@ -32,9 +32,9 @@
   time.timeZone = "America/Montevideo";
 
 
-
+    services.displayManager.sddm.wayland.enable = true;
   # Enable sddm
-  services.displayManager.sddm.enable = true;
+    services.displayManager.sddm.enable = true;
 
 
   # Enable sound with pipewire.
