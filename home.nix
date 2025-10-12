@@ -16,7 +16,7 @@
 
     home.pointerCursor = {
         enable = true;
-        name = "Catppuccin-mocha-dark-cursors";
+        name = "catppuccin-mocha-dark-cursors";
         package = pkgs.catppuccin-cursors.mochaDark;
         x11.enable = true;
         sway.enable = true;
