@@ -8,7 +8,7 @@
       ./desktops/niri.nix
     ];
 
-
+  #todo move this to another file
   fileSystems."/mnt/hdd1" = {
     device = "/dev/disk/by-uuid/39f08c2e-6b56-48d2-bf1b-2010b3983340"; # replace with your UUID
     fsType = "ext4"; # or whatever lsblk shows
@@ -20,6 +20,7 @@
     fsType = "ext4"; # or whatever lsblk shows
     options = [ "defaults" "nofail" ]; # nofail = don’t break boot if missing
   };
+
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -92,6 +93,7 @@
   };
 
   #Syncthing
+  #Todo: Move this to its own file and make the extended config
   services = {
     syncthing = {
         enable = true;
@@ -119,6 +121,7 @@
 
   nixpkgs.config.allowUnfree = true;
 
+  #todo separate this in multiple files
   environment.systemPackages = with pkgs; [
     #dev
     vim
