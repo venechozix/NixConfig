@@ -140,6 +140,7 @@
     opentabletdriver
     osu-lazer-bin
     gfn-electron
+    lutris
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
