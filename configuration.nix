@@ -135,6 +135,7 @@
     #gaming
     protonup-qt
     opentabletdriver
+    osu-lazer-bin
   ];
 
 
