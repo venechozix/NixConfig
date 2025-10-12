@@ -139,6 +139,7 @@
     protonup-qt
     opentabletdriver
     osu-lazer-bin
+    gfn-electron
   ];
 
 
