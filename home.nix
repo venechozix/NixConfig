@@ -19,8 +19,9 @@
         name = "catppuccin-mocha-dark-cursors";
         package = pkgs.catppuccin-cursors.mochaDark;
         x11.enable = true;
+        gtk.enable= true;
         sway.enable = true;
-        size = 48;
+        size = 64;
   };
 
   programs.bash = {
