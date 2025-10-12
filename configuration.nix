@@ -12,7 +12,7 @@
       ./configs/locale.nix
       ./configs/services.nix
 
-      ./configs/kde.nix
+      #./configs/kde.nix
       ./configs/niri.nix
     ];
 
@@ -33,16 +33,8 @@
 
 
 
-  # Enable the X11 windowing system.
-  # You can disable this if you're only using the Wayland session.
-  services.xserver.enable = true;
   # Enable sddm
   services.displayManager.sddm.enable = true;
-  # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
-  };
 
 
   # Enable sound with pipewire.
