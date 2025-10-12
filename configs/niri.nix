@@ -3,7 +3,7 @@
 
     environment.systemPackages = with pkgs; [
         waybar
-        wofi
+        fuzzel
         mako
         swaybg
         swayidle
