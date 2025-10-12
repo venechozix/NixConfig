@@ -14,6 +14,13 @@
     };
   };
 
+    home.pointerCursor = {
+        enable = true;
+        name = "Catppuccin-mocha-dark-cursors";
+        package = pkgs.catppuccin-cursors.mochaDark;
+        # x11.enable = true;
+        gtk.enable = true;
+  };
 
   programs.bash = {
     enable = true;
