@@ -17,6 +17,8 @@
         #utils
         vesktop
         keepassxc
+        zip
+        unzip
     ];
 
 
