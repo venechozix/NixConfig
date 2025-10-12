@@ -4,5 +4,8 @@
     environment.systemPackages = with pkgs; [
         waybar
         wofi
+        mako
+        swaybg
+        swayidle
     ];
 }

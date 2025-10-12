@@ -130,6 +130,7 @@
     xclip
     bat
     tealdeer
+    neovim
     #school
     ciscoPacketTracer8
     #utils
