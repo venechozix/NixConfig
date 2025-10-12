@@ -5,8 +5,11 @@
 
     fonts.packages = with pkgs; [
         jetbrains-mono
-        nerdfonts
+        font-awesome
+        nerd-fonts.jetbrains-mono
     ];
+
+    fonts.fontconfig.enable = true;
 
     environment.systemPackages = with pkgs; [
         #dev
