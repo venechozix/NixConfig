@@ -7,5 +7,6 @@
         mako
         swaybg
         swayidle
+        xwayland-satellite
     ];
 }
