@@ -20,6 +20,7 @@
         package = pkgs.catppuccin-cursors.mochaDark;
         x11.enable = true;
         sway.enable = true;
+        size = 24;
   };
 
   programs.bash = {
