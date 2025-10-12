@@ -10,6 +10,7 @@
       ./configs/hardware.nix
       ./configs/user.nix
       ./configs/locale.nix
+      ./configs/services.nix
 
       ./configs/kde.nix
       ./configs/niri.nix
