@@ -27,6 +27,7 @@
         description = "Jesus";
         extraGroups = [ "networkmanager" "wheel" "syncthing" ];
         packages = with pkgs; [
+            exfatprogs
             gparted
             exfat
         ];
