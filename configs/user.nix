@@ -12,7 +12,7 @@
             ll = "ls -l";
             update = "sudo nixos-rebuild switch --flake ~/NixConfig/";
         };
-        history.size = 1000;
+        histSize = 1000;
         oh-my-zsh = { # "ohMyZsh" without Home Manager
             enable = true;
             plugins = [ "git" "thefuck" ];
