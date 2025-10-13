@@ -27,6 +27,7 @@
         #school
         ciscoPacketTracer8
         #utils
+        fastfetch
         spotify
         vesktop
         keepassxc
