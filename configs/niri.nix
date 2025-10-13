@@ -10,7 +10,7 @@
             xdg-desktop-portal-gtk  
             xdg-desktop-portal-gnome
         ];
-        xdgOpenUsePortal = true
+        xdgOpenUsePortal = true;
     };
     environment.systemPackages = with pkgs; [
         nautilus
