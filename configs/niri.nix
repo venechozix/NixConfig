@@ -2,6 +2,7 @@
     programs.niri.enable=true;
     
     services.gnome.gnome-keyring.enable = true;
+    security.polkit.enable = true;
 
     xdg.portal.enable = true;
     xdg.portal.extraPortals = with pkgs ; [
@@ -9,8 +10,8 @@
         xdg-desktop-portal-gnome
     ];
 
+
     environment.systemPackages = with pkgs; [
-        polkit
         nautilus
         waybar
         fuzzel
