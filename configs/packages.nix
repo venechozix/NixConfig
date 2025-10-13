@@ -23,7 +23,6 @@
         python313
         python314
         pyenv
-        pip
         vscodium
         #school
         ciscoPacketTracer8
