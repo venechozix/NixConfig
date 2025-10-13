@@ -3,7 +3,7 @@
     
     xdg.portal.enable = true;
     xdg.portal.extraPortals = [
-        kdePackages.xdg-desktop-portal-kde
+        xdg-desktop-portal-gtk  
     ];
 
     environment.systemPackages = with pkgs; [
