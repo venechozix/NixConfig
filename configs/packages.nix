@@ -30,6 +30,7 @@
         rar
         unrar
         kdePackages.dolphin
+        wine
     ];
 
 
