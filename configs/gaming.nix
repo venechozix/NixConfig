@@ -25,6 +25,9 @@
         osu-lazer-bin
         gfn-electron
         lutris
+        glib
+        glib-networking
+        dconf
     ];
 
     nixpkgs.config.permittedInsecurePackages = [
