@@ -3,7 +3,7 @@
     
     xdg.portal.enable = true;
     xdg.portal.extraPortals = [
-        pkgs.xdg-desktop-portal-kde
+        pkgs.xdg-desktop-portal-gtk
     ];
 
     environment.systemPackages = with pkgs; [
