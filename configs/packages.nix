@@ -37,7 +37,6 @@
         kdePackages.dolphin
         wine
         winetricks
-        thefuck #for zsh    
     ];  
 
 

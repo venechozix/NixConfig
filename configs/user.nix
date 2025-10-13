@@ -15,7 +15,7 @@
         histSize = 1000;
         ohMyZsh = { # "ohMyZsh" without Home Manager
             enable = true;
-            plugins = [ "git" "thefuck" ];
+            plugins = [ "git" ];
             theme = "nicoulaj";
         };
     };
