@@ -4,13 +4,14 @@
     services.gnome.gnome-keyring.enable = true;
     security.polkit.enable = true;
 
-    xdg.portal.enable = true;
-    xdg.portal.extraPortals = with pkgs ; [
-        xdg-desktop-portal-gtk  
-        xdg-desktop-portal-gnome
-    ];
-
-
+    xdg.portal = {
+        enable = true;
+        extraPortals = with pkgs ; [
+            xdg-desktop-portal-gtk  
+            xdg-desktop-portal-gnome
+        ];
+        xdgOpenUsePortal = true
+    };
     environment.systemPackages = with pkgs; [
         nautilus
         waybar
