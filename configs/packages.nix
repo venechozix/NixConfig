@@ -20,9 +20,14 @@
         bat
         tealdeer
         neovim
+        python313
+        python314
+        pyenv
+        vscodium
         #school
         ciscoPacketTracer8
         #utils
+        spotify
         vesktop
         keepassxc
         zip
@@ -32,6 +37,7 @@
         kdePackages.dolphin
         wine
         winetricks
+        thefuck #for zsh    
     ];  
 
 

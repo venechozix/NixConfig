@@ -13,7 +13,7 @@
             update = "sudo nixos-rebuild switch --flake ~/NixConfig/";
         };
         histSize = 1000;
-        oh-my-zsh = { # "ohMyZsh" without Home Manager
+        ohMyZsh = { # "ohMyZsh" without Home Manager
             enable = true;
             plugins = [ "git" "thefuck" ];
             theme = "nicoulaj";
