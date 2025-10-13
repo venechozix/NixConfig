@@ -11,4 +11,6 @@
             configDir = "/home/chozix/.config/syncthing";   # Folder for Syncthing's settings and keys
         };
     };
+
+    services.udisks2.enable = true;
 }
