@@ -31,7 +31,8 @@
         unrar
         kdePackages.dolphin
         wine
-    ];
+        winetricks
+    ];  
 
 
 }
