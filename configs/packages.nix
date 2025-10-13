@@ -27,6 +27,7 @@
         keepassxc
         zip
         unzip
+        dolphin
     ];
 
 
