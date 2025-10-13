@@ -1,13 +1,16 @@
 {config, pkgs, ...}:{
     programs.niri.enable=true;
     
+    services.gnome.gnome-keyring.enable = true;
+
     xdg.portal.enable = true;
     xdg.portal.extraPortals = with pkgs ; [
         xdg-desktop-portal-gtk  
-        kdePackages.xdg-desktop-portal-kde
+        xdg-desktop-portal-gnome
     ];
 
     environment.systemPackages = with pkgs; [
+        nautilus
         waybar
         fuzzel
         mako
