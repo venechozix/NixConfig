@@ -10,6 +10,7 @@
     ];
 
     environment.systemPackages = with pkgs; [
+        polkit
         nautilus
         waybar
         fuzzel
