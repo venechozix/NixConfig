@@ -27,7 +27,7 @@
         keepassxc
         zip
         unzip
-        dolphin
+        kdePackages.dolphin
     ];
 
 
