@@ -27,8 +27,8 @@
         description = "Jesus";
         extraGroups = [ "networkmanager" "wheel" "syncthing" ];
         packages = with pkgs; [
-            kdePackages.kate
-            #  thunderbird
+            gparted
+            exfat
         ];
     };
 
