@@ -13,6 +13,7 @@
 
     environment.systemPackages = with pkgs; [
         #dev
+        android-studio
         vim
         wget
         alacritty
