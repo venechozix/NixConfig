@@ -20,7 +20,9 @@
         };
     };
 
-
+    nixpkgs.config.permittedInsecurePackages = [
+                "libsoup-2.74.3"
+    ];
 
     users.users.chozix = {
         isNormalUser = true;

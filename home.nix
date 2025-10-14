@@ -5,16 +5,14 @@
   home.homeDirectory = "/home/chozix";
   home.stateVersion = "25.05";
 
-  programs.git = {
-    enable = true;
-    userName = "chozix";
-    userEmail = "venechozix@gmail.com";
-    extraConfig ={
-      init.defaultBranch = "main";
+    programs.git = {
+        enable = true;
+        userName = "chozix";
+        userEmail = "venechozix@gmail.com";
+        extraConfig ={
+            init.defaultBranch = "main";
+        };
     };
-  };
-
-
 
     home.pointerCursor = {
         enable = true;
@@ -24,16 +22,16 @@
         gtk.enable= true;
         sway.enable = true;
         size = 64;
-  };
-
-  programs.bash = {
-    enable = true;
-    shellAliases = {
-      btw = "echo i use nixos btw";
     };
-  };
 
-  home.packages = with pkgs; [
-    inputs.zen-browser.packages."${system}".default
-  ];
+    programs.bash = {
+        enable = true;
+        shellAliases = {
+            btw = "echo i use nixos btw";
+        };
+        };
+
+    home.packages = with pkgs; [
+        inputs.zen-browser.packages."${system}".default
+    ];
 }
