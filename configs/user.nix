@@ -30,6 +30,7 @@
             exfatprogs
             gparted
             exfat
+            sonobus
         ];
     };
 
