@@ -27,6 +27,7 @@
         #school
         ciscoPacketTracer8
         #utils
+        pavucontrol
         fastfetch
         spotify
         vesktop
