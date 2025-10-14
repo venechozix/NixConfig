@@ -25,6 +25,7 @@
         python313
         python314
         pyenv
+        python3Packages.sounddevice
         vscodium
         #school
         ciscoPacketTracer8
