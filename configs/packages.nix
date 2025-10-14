@@ -13,6 +13,7 @@
 
     environment.systemPackages = with pkgs; [
         #dev
+        libgccjit
         android-studio
         vim
         wget
