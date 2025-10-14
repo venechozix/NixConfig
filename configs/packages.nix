@@ -38,9 +38,9 @@
         kdePackages.dolphin
         wine
         winetricks
-        obs-studio 
+        obs-studio
     ];  
-
+    
 
 }
 
