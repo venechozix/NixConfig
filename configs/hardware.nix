@@ -3,8 +3,6 @@
     services.xserver.videoDrivers = [ "modesetting" ];
 
     hardware.opengl.enable = true;
-    hardware.opengl.driSupport = true;
-    hardware.opengl.driSupport32Bit = true;
 
     fileSystems."/mnt/hdd1" = {
         device = "/dev/disk/by-uuid/39f08c2e-6b56-48d2-bf1b-2010b3983340"; # replace with your UUID
