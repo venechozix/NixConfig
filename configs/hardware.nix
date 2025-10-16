@@ -15,12 +15,12 @@
     hardware.graphics = {
         enable = true;
         extraPackages = with pkgs; [
-            mesa.drivers
+            mesa
             intel-vaapi-driver
             libvdpau-va-gl
         ];
         extraPackages32 = with pkgs.pkgsi686Linux; [
-            mesa.drivers
+            mesa
         ];
     };
     fileSystems."/mnt/hdd1" = {
