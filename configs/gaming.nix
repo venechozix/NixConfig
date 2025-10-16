@@ -12,6 +12,8 @@
     };
 
 
+    programs.appimage.enable = true;
+    programs.appimage.binfmt = true;
 
     hardware.opentabletdriver = {
         enable = true;
