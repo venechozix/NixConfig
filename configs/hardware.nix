@@ -1,9 +1,16 @@
 { config, pkgs, ... }: {
 
+    services.xserver.enable = true;
     services.xserver.videoDrivers = [ "modesetting" ];
 
-    hardware.opengl.enable = true;
-
+    hardware.opengl = {
+        enable = true;
+        extraPackages = with pkgs; [
+            intel-media-driver
+            intel-vaapi-driver
+            libvdpau-va-gl
+        ];
+    };
     fileSystems."/mnt/hdd1" = {
         device = "/dev/disk/by-uuid/39f08c2e-6b56-48d2-bf1b-2010b3983340"; # replace with your UUID
         fsType = "ext4"; # or whatever lsblk shows
