@@ -6,11 +6,22 @@
     nixpkgs.config.packageOverrides = pkgs: {
         intel-vaapi-driver = pkgs.intel-vaapi-driver.override { enableHybridCodec = true; };
     };
+
+    environment.systemPackages = with pkgs; [
+        vulkan-tools
+        vulkan-loader
+        vulkan-validation-layers
+    ];
     hardware.graphics = {
         enable = true;
+        driSupport32Bit = true;
         extraPackages = with pkgs; [
+            mesa.drivers
             intel-vaapi-driver
             libvdpau-va-gl
+        ];
+        extraPackages32 = with pkgs.pkgsi686Linux; [
+            mesa.drivers
         ];
     };
     fileSystems."/mnt/hdd1" = {
