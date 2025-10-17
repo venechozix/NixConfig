@@ -23,6 +23,7 @@
             mesa
         ];
     };
+
     fileSystems."/mnt/hdd1" = {
         device = "/dev/disk/by-uuid/39f08c2e-6b56-48d2-bf1b-2010b3983340"; # replace with your UUID
         fsType = "ext4"; # or whatever lsblk shows
@@ -34,4 +35,17 @@
         fsType = "ext4"; # or whatever lsblk shows
         options = [ "defaults" "nofail" ]; # nofail = don’t break boot if missing
     };
+    
+    fileSystems."/home/chozix/drives/hdd2" = {
+        device = "/dev/disk/by-uuid/628f7e98-4d7f-4c74-a2b2-1c1bf1dafae6"; # replace with your UUID
+        fsType = "ext4"; # or whatever lsblk shows
+        options = [ "defaults" "nofail" ]; # nofail = don’t break boot if missing
+    };
+
+    fileSystems."/mnt/hdd2" = {
+        device = "/dev/disk/by-uuid/628f7e98-4d7f-4c74-a2b2-1c1bf1dafae6"; # replace with your UUID
+        fsType = "ext4"; # or whatever lsblk shows
+        options = [ "defaults" "nofail" ]; # nofail = don’t break boot if missing
+    };
+
 }
