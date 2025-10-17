@@ -25,7 +25,7 @@
     users.users.chozix = {
         isNormalUser = true;
         description = "Jesus";
-        extraGroups = [ "networkmanager" "wheel" "syncthing" ];
+        extraGroups = [ "networkmanager" "wheel" "syncthing" "docker" ];
         packages = with pkgs; [
             exfatprogs
             gparted

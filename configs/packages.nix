@@ -11,6 +11,10 @@
 
     fonts.fontconfig.enable = true;
 
+    services.docker{
+        enable=true;    
+    };
+
     environment.systemPackages = with pkgs; [
         #dev
         libgccjit
