@@ -47,6 +47,7 @@
         wine
         winetricks
         obs-studio
+        firefox
     ];  
     
 
