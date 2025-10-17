@@ -11,7 +11,7 @@
 
     fonts.fontconfig.enable = true;
 
-    services.docker{
+    services.docker = {
         enable=true;    
     };
 
