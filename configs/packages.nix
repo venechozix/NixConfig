@@ -48,6 +48,7 @@
         winetricks
         obs-studio
         firefox
+        gimp
     ];  
     
 
