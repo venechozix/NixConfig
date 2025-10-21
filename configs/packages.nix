@@ -43,6 +43,7 @@
         unzip
         rar
         unrar
+        p7zip
         kdePackages.dolphin
         wine
         winetricks
