@@ -14,6 +14,7 @@
     };
 
     environment.systemPackages = with pkgs; [
+        swww
         wlr-randr
         nautilus
         waybar
