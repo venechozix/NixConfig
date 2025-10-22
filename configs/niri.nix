@@ -12,7 +12,9 @@
         ];
         xdgOpenUsePortal = true;
     };
+
     environment.systemPackages = with pkgs; [
+        wlr-randr
         nautilus
         waybar
         fuzzel
