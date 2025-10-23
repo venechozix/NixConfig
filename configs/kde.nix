@@ -6,8 +6,8 @@
 
 
     services.xserver.xkb = {
-    layout = "us";
-    variant = "";
+        layout = "us";
+        variant = "";
     };
     services.desktopManager.plasma6.enable = true;
 }
