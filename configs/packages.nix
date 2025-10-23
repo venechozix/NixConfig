@@ -31,8 +31,6 @@
         pyenv
         python3Packages.sounddevice
         vscodium
-        #school
-        ciscoPacketTracer8
         #utils
         pavucontrol
         fastfetch
