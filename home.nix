@@ -29,7 +29,7 @@
         shellAliases = {
             btw = "echo i use nixos btw";
         };
-        };
+    };
 
     home.packages = with pkgs; [
         inputs.zen-browser.packages."${system}".default
