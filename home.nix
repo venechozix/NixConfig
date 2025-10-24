@@ -31,27 +31,6 @@
         };
     };
 
-    programs.neovim = {
-        enable = true;
-        viAlias = true;
-        vimAlias = true;
-
-        extraConfig = ''
-            set number
-            syntax on
-            set expandtab
-            set tabstop=4
-            set softtabstop=4
-            set shiftwidth=4
-        '';
-
-        plugins = with pkgs.vimPlugins; [
-            telescope-nvim
-            nvim-treesitter
-            nvim-lspconfig
-            gruvbox-nvim
-        ];
-    };
 
     home.packages = with pkgs; [
         inputs.zen-browser.packages."${system}".default
