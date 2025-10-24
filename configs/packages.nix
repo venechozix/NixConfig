@@ -26,6 +26,8 @@
         bat
         tealdeer
         neovim
+        lua
+        binutils
         python313
         python314
         pyenv
