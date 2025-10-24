@@ -28,6 +28,8 @@
         neovim
         lua
         binutils
+        gnumake
+        glibc
         python313
         python314
         pyenv
