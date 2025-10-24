@@ -1,9 +1,9 @@
 { config , pkgs, inputs, ...}:
 
 {
-  home.username = "chozix";
-  home.homeDirectory = "/home/chozix";
-  home.stateVersion = "25.05";
+    home.username = "chozix";
+    home.homeDirectory = "/home/chozix";
+    home.stateVersion = "25.05";
 
     programs.alacritty = {
         enable=true;
@@ -17,6 +17,7 @@
             };
         };
     };
+
 
     programs.git = {
         enable = true;
@@ -41,5 +42,6 @@
 
     home.packages = with pkgs; [
         inputs.zen-browser.packages."${system}".default
+        chatterino7
     ];
 }
