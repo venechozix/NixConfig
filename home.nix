@@ -10,6 +10,10 @@
         settings = {
             window = {
                 decorations = "None";
+                padding = {
+                    x = 5;
+                    y = 5;
+                };
             };
         };
     };
@@ -33,12 +37,6 @@
         size = 64;
     };
 
-    programs.bash = {
-        enable = true;
-        shellAliases = {
-            btw = "echo i use nixos btw";
-        };
-    };
 
 
     home.packages = with pkgs; [
