@@ -5,6 +5,15 @@
   home.homeDirectory = "/home/chozix";
   home.stateVersion = "25.05";
 
+    programs.alacritty = {
+        enable=true;
+        settings = {
+            window = {
+                decorations = "None";
+            };
+        };
+    };
+
     programs.git = {
         enable = true;
         settings ={
