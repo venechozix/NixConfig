@@ -31,6 +31,7 @@
             exfatprogs
             gparted
             exfat
+            obsidian
         ];
     };
 
