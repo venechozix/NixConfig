@@ -1,4 +1,4 @@
-{ config , pkgs, inputs, ...}:
+{ config, lib, pkgs, inputs, ...}:
 
 {
     home.username = "chozix";
@@ -17,7 +17,17 @@
             };
         };
     };
+    
+    programs.neovim = {
+        enable = true;
 
+        viAlias=true;
+        vimAlias=true;
+        extraLuaConfig= lib.fileContents ./nvim/init.lua;
+        plugins = with pkgs [
+            vimPlugins.telescope-nvim 
+        ];
+    };
 
     programs.git = {
         enable = true;

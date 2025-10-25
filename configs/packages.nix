@@ -27,7 +27,6 @@
         xclip
         bat
         tealdeer
-        neovim
         lua
         binutils
         gnumake
