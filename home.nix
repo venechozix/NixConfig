@@ -24,7 +24,7 @@
         viAlias=true;
         vimAlias=true;
         extraLuaConfig= lib.fileContents ./nvim/init.lua;
-        plugins = with pkgs [
+        plugins = with pkgs; [
             vimPlugins.telescope-nvim 
         ];
     };
