@@ -26,7 +26,8 @@
 	  # Add plugins
 	  plugins = with pkgs.vimPlugins; [
 	    telescope-nvim
-	    plenary-nvim  # Required dependency for Telescope
+	    plenary-nvim # Required dependency for Telescope
+        catppuccin-vim
 	  ];
       # Add system tools used by Telescope
       extraPackages = with pkgs; [
@@ -36,7 +37,6 @@
 
 	};
 
-	# Symlink your local nvim directory into ~/.config/nvim
 	home.file.".config/nvim".source = ./nvim;
 
     programs.git = {
