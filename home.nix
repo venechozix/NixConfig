@@ -18,15 +18,25 @@
         };
     };
     
-    programs.neovim = {
-        enable = true;
-        viAlias=true;
-        vimAlias=true;
-        extraLuaConfig= lib.fileContents ./nvim/init.lua;
-        plugins = with pkgs; [
-            vimPlugins.telescope-nvim 
-        ];
-    };
+	programs.neovim = {
+	  enable = true;
+	  viAlias = true;
+	  vimAlias = true;
+
+	  # Load your modular Lua config (init.lua will handle the rest)
+	  extraConfig = ''
+	    lua require("init")
+	  '';
+
+	  # Add plugins
+	  plugins = with pkgs.vimPlugins; [
+	    telescope-nvim
+	    plenary-nvim  # Required dependency for Telescope
+	  ];
+	};
+
+	# Symlink your local nvim directory into ~/.config/nvim
+	home.file.".config/nvim".source = ./nvim;
 
     programs.git = {
         enable = true;
