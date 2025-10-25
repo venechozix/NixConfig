@@ -32,6 +32,7 @@
             gparted
             exfat
             obsidian
+            desmume
         ];
     };
 
