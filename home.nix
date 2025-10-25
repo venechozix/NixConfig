@@ -23,11 +23,6 @@
 	  viAlias = true;
 	  vimAlias = true;
 
-	  # Load your modular Lua config (init.lua will handle the rest)
-	  extraConfig = ''
-	    lua require("init")
-	  '';
-
 	  # Add plugins
 	  plugins = with pkgs.vimPlugins; [
 	    telescope-nvim
