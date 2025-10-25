@@ -1,5 +1,5 @@
-require(plugins.telescope)
-require(config.keymaps)
+require("plugins.telescope")
+require("config.keymaps")
 
 
 -- General Configurations
