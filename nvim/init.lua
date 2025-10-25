@@ -1,3 +1,7 @@
+require(plugins.telescope)
+require(config.keymaps)
+
+
 -- General Configurations
 vim.cmd("set expandtab")
 vim.cmd("set tabstop=4")
