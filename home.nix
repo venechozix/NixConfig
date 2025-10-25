@@ -28,6 +28,12 @@
 	    telescope-nvim
 	    plenary-nvim  # Required dependency for Telescope
 	  ];
+      # Add system tools used by Telescope
+      extraPackages = with pkgs; [
+        fd
+        ripgrep
+      ];
+
 	};
 
 	# Symlink your local nvim directory into ~/.config/nvim
@@ -41,6 +47,8 @@
             user.email = "venechozix@gmail.com";
         };
     };
+
+
 
     home.pointerCursor = {
         enable = true;
