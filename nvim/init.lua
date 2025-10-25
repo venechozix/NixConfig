@@ -4,7 +4,7 @@ require("plugins.telescope")
 
 -- General Configurations
 
-vim.cmd[[colorscheme catppuccin-macchiato]]
+vim.cmd("colorscheme catppuccin_macchiato")
 
 vim.cmd("set expandtab")
 vim.cmd("set tabstop=4")
