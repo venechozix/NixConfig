@@ -27,6 +27,7 @@
         osu-lazer-bin
         gfn-electron
         lutris
+        heroic-unwrapped
         glib
         glib-networking
         dconf
