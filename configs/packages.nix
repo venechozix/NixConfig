@@ -50,6 +50,7 @@
         kdePackages.dolphin
         wine
         winetricks
+        wine64Packages.waylandFull
         obs-studio
         firefox
         gimp
