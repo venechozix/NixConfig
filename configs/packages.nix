@@ -37,6 +37,7 @@
         python3Packages.sounddevice
         vscodium
         #utils
+        zoom-us
         pavucontrol
         fastfetch
         spotify
