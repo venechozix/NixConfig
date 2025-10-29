@@ -14,7 +14,7 @@
 
 
     #vpn
-    services.openvpn3 = {
+    programs.openvpn3 = {
         enable = true;
     };
 
