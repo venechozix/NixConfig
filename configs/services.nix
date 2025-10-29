@@ -2,8 +2,7 @@
 
     #Syncthing
     #Todo: Move this to its own file and make the extended config
-    services = {
-        syncthing = {
+    services.syncthing = {
             enable = true;
             group = "syncthing";
             user = "chozix";
@@ -13,4 +12,14 @@
     };
 
     services.udisks2.enable = true;
+
+
+    #vpn
+    services.openvpn3 = {
+        enable = true;
+    };
+
+    # You might also need networking tools
+    environment.systemPackages = with pkgs; [ openvpn wget ];
+
 }
