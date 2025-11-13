@@ -37,6 +37,7 @@
         python3Packages.sounddevice
         vscodium
         #utils
+        readest
         icu77
         zoom-us
         pavucontrol
