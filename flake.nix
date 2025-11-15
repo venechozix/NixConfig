@@ -9,7 +9,6 @@
     };
     outputs = { nixpkgs, home-manager, zen-browser, ... } @ inputs: {
         nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-            stdenv.hostPlatform.system = "x86_64-linux";
             specialArgs = { inherit inputs; };
 
             modules = [ 
