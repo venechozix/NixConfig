@@ -1,5 +1,15 @@
-{ config, pkgs, ... }: {
+{ config, pkgs, inputs, ... }: {
 
+    nixpkgs.overlays = [
+      (final: prev: {
+        gfn-electron = (import inputs.oldpkgs {
+          system = pkgs.system;
+          config.permittedInsecurePackages = [ "electron-35.7.5" ];
+        }).gfn-electron;
+      })
+    ];
+
+    
     #Steam
     programs.steam = {
         enable = true;
@@ -31,10 +41,6 @@
         glib
         glib-networking
         dconf
-    ];
-
-    nixpkgs.config.permittedInsecurePackages = [
-        "electron-35.7.5" #for gfn-electron
     ];
 
 }

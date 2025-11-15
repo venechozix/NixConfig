@@ -17,19 +17,12 @@
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
 
+            
       modules = [
+        
         ./configuration.nix
+
         home-manager.nixosModules.home-manager
-
-        # overlay for gfn-electron
-        {
-          nixpkgs.overlays = [
-            (final: prev: {
-              gfn-electron = (import oldpkgs { system = "x86_64-linux"; }).gfn-electron;
-            })
-          ];
-        }
-
         {
           home-manager = {
             useGlobalPkgs = true;
