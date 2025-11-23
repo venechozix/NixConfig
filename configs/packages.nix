@@ -37,6 +37,7 @@
         python3Packages.sounddevice
         vscodium
         #utils
+        kdePackages.kdenlive
         readest
         icu77
         zoom-us
