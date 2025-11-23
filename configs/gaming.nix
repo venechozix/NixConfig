@@ -3,7 +3,7 @@
     nixpkgs.overlays = [
       (final: prev: {
         gfn-electron = (import inputs.oldpkgs {
-          system = pkgs.system;
+          system = pkgs.stdenv.hostPlatform.system;
           config.permittedInsecurePackages = [ "electron-35.7.5" ];
         }).gfn-electron;
       })
