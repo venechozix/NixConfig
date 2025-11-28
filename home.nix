@@ -42,6 +42,8 @@
     programs.git = {
         enable = true;
         settings ={
+            core.askPass = "";
+            credential.helper = "store"
             init.defaultBranch = "main";
             user.name = "chozix";
             user.email = "venechozix@gmail.com";
