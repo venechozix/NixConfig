@@ -2,9 +2,6 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
 
-    # Use the specified commit where gfn-electron existed
-    oldpkgs.url = "github:nixos/nixpkgs/3acb677ea67d4c6218f33de0db0955f116b7588c";
-
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";

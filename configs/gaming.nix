@@ -1,14 +1,5 @@
 { config, pkgs, inputs, ... }: {
 
-    nixpkgs.overlays = [
-      (final: prev: {
-        gfn-electron = (import inputs.oldpkgs {
-          system = pkgs.stdenv.hostPlatform.system;
-          config.permittedInsecurePackages = [ "electron-35.7.5" ];
-        }).gfn-electron;
-      })
-    ];
-
     
     #Steam
     programs.steam = {
@@ -35,7 +26,6 @@
         protonup-qt
         opentabletdriver
         osu-lazer-bin
-        gfn-electron
         lutris
         heroic-unwrapped
         glib
