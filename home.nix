@@ -50,7 +50,9 @@
         };
     };
 
-
+    home.sessionVariables = {
+        SDL_VIDEO_WAYLAND_PREFER_LIBDECOR = "0";
+    };
 
     home.pointerCursor = {
         enable = true;
