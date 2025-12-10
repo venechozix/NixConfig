@@ -51,7 +51,14 @@
     };
 
     home.sessionVariables = {
+        home.sessionVariables = {
+        # 1. Forces SDL applications  to use the Wayland backend.
+        SDL_VIDEODRIVER = "wayland"; 
+        
+        # 2. Tells SDL/libdecor not to draw its own title bar.
+        # This prevents the white bar from appearing, leaving window management to Niri.
         SDL_VIDEO_WAYLAND_PREFER_LIBDECOR = "0";
+  };
     };
 
     home.pointerCursor = {
