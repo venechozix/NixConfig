@@ -56,6 +56,7 @@
         wine64Packages.waylandFull
         obs-studio
         firefox
+        mkchromecast
         gnomecast
         gimp
     ];  
