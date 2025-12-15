@@ -67,5 +67,6 @@
         chatterino7
         brave
         qbittorrent
+        mkchromecast
     ];
 }
