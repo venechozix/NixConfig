@@ -61,6 +61,9 @@
         mkchromecast
         gnomecast
         gimp
+        castnow
+        vlc
+        
     ];  
     
 
