@@ -1,5 +1,6 @@
 { config, pkgs, ... }: {
-
+    
+    services.avahi.enable = true;
     #Syncthing
     #Todo: Move this to its own file and make the extended config
     services.syncthing = {
