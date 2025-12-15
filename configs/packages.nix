@@ -61,6 +61,7 @@
         obs-studio
         firefox
         mkchromecast
+        castnow
         gimp
     ];  
     
