@@ -21,7 +21,6 @@
     environment.systemPackages = with pkgs; [
         #dev
         libgccjit
-        android-studio
         vim
         wget
         alacritty
@@ -58,8 +57,6 @@
         wine64Packages.waylandFull
         obs-studio
         firefox
-        mkchromecast
-        gnomecast
         gimp
         castnow
         vlc
