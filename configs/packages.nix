@@ -62,6 +62,7 @@
         vlc
         openrgb-with-all-plugins
         gsettings-desktop-schemas
+        geekbench
     ];  
     
 
