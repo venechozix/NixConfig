@@ -20,7 +20,7 @@
     ];
     environment.systemPackages = with pkgs; [
         #dev
-        gnome3.gnome-keyring
+        gnome-keyring
         libgccjit
         vim
         wget
