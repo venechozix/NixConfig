@@ -41,7 +41,7 @@
 
   # Enable sddm
   services.displayManager.gdm.enable = true;
-  services.displayManager.gdm.wayland.enable = true;
+  services.displayManager.gdm.wayland = true;
 
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
