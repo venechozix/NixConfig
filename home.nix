@@ -50,15 +50,15 @@
         };
     };
 
-#   home.pointerCursor = {
-#       enable = true;
-#       name = "catppuccin-mocha-dark-cursors";
-#       package = pkgs.catppuccin-cursors.mochaDark;
-#       x11.enable = true;
-#       gtk.enable= true;
-#       sway.enable = true;
-#       size = 64;
-#   };
+    home.pointerCursor = {
+        enable = true;
+        name = "catppuccin-mocha-dark-cursors";
+        package = pkgs.catppuccin-cursors.mochaDark;
+        x11.enable = true;
+        gtk.enable= true;
+        sway.enable = true;
+        size = 64;
+    };
 
 
 
