@@ -60,6 +60,7 @@
         gimp
         castnow
         vlc
+        openrgb-with-all-plugins
     ];  
     
 
