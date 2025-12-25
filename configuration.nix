@@ -4,10 +4,10 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./configs/hardware.nix
 
       ./configs/packages.nix
       ./configs/gaming.nix
-      ./configs/hardware.nix
       ./configs/user.nix
       ./configs/locale.nix
       ./configs/services.nix
@@ -16,8 +16,15 @@
       ./configs/niri.nix
     ];
 
-
-
+  boot.initrd.kernelModules = [ "amdgpu" ];
+  
+  hardware.graphics.enable = true;
+  services.xserver.enable = true;
+  services.xserver.videoDrivers = [ "amdgpu" ];
+  boot.kernelParams = [
+    "video=DP-1:1280x1024@75.03"
+    "video=HDMI-A-1:1366x768@59.73"
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -50,5 +57,5 @@
   nixpkgs.config.allowUnfree = true;
 
 
-  system.stateVersion = "25.05"; # Did you read the comment?
+  system.stateVersion = "25.11"; # Did you read the comment?
 }

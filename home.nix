@@ -3,7 +3,7 @@
 {
     home.username = "chozix";
     home.homeDirectory = "/home/chozix";
-    home.stateVersion = "25.05";
+    home.stateVersion = "25.11";
 
     programs.alacritty = {
         enable=true;

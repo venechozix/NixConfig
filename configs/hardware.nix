@@ -1,11 +1,6 @@
 { config, pkgs, ... }: {
 
-    services.xserver.enable = true;
-    services.xserver.videoDrivers = [ "modesetting" ];
 
-    nixpkgs.config.packageOverrides = pkgs: {
-        intel-vaapi-driver = pkgs.intel-vaapi-driver.override { enableHybridCodec = true; };
-    };
 
     environment.systemPackages = with pkgs; [
         vulkan-tools
@@ -13,8 +8,9 @@
         vulkan-validation-layers
         bluetui
     ];
-    
-    
+
+
+
     hardware.bluetooth = {
       enable = true;
       powerOnBoot = true;
@@ -35,18 +31,6 @@
           AutoEnable = true;
         };
       };
-    };
-
-    hardware.graphics = {
-        enable = true;
-        extraPackages = with pkgs; [
-            mesa
-            intel-vaapi-driver
-            libvdpau-va-gl
-        ];
-        extraPackages32 = with pkgs.pkgsi686Linux; [
-            mesa
-        ];
     };
 
     fileSystems."/mnt/hdd1" = {
