@@ -20,7 +20,6 @@
     ];
     environment.systemPackages = with pkgs; [
         #dev
-        gnome-keyring
         libgccjit
         vim
         wget
@@ -61,7 +60,6 @@
         gimp
         castnow
         vlc
-        openrgb-with-all-plugins
     ];  
     
 
