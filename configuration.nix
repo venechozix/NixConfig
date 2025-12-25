@@ -39,9 +39,15 @@
   time.timeZone = "America/Montevideo";
 
 
-  # Enable sddm
-  services.displayManager.gdm.enable = true;
-  services.displayManager.gdm.wayland = true;
+    services.greetd = {
+      enable = true;
+      settings = {
+        default_session = {
+          command = "niri-session";
+          user = "chozix";
+        };
+      };
+    };
 
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
