@@ -57,7 +57,7 @@
         x11.enable = true;
         gtk.enable= true;
         sway.enable = true;
-        size = 64;
+        size = 24;
     };
 
     gtk = {
