@@ -19,7 +19,6 @@
         nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
             specialArgs = { inherit inputs; };
             modules = [
-                aagl.nixosModules.default
 
                 ./configuration.nix
                 home-manager.nixosModules.home-manager
@@ -31,6 +30,12 @@
                         backupFileExtension = "backup";
                         extraSpecialArgs = { inherit inputs; };
                     };
+                }
+                {
+                    imports = [ aagl.nixosModules.default ];
+                    nix.settings = aagl.nixConfig; # Set up Cachix
+                    programs.anime-game-launcher.enable = true; # Adds launcher and /etc/hosts rules
+                    programs.sleepy-launcher.enable = true;
                 }
             ];
         };

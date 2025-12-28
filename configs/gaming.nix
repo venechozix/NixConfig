@@ -12,10 +12,6 @@
         protontricks.enable = true;
     };
 
-    nix.settings = aagl.nixConfig;
-        
-    programs.sleepy-launcher.enable = true;
-
     programs.appimage.enable = true;
     programs.appimage.binfmt = true;
 
