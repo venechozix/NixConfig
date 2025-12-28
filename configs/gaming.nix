@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, aagl, ... }: {
+{ config, pkgs, inputs,  ... }: {
 
     
     #Steam
