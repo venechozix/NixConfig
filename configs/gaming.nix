@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }: {
+{ config, pkgs, inputs, aagl, ... }: {
 
     
     #Steam
@@ -12,6 +12,9 @@
         protontricks.enable = true;
     };
 
+    nix.settings = aagl.nixConfig;
+        
+    programs.sleepy-launcher.enable = true;
 
     programs.appimage.enable = true;
     programs.appimage.binfmt = true;
