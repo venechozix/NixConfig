@@ -15,7 +15,7 @@
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
   };
 
-    outputs = { nixpkgs, home-manager, zen-browser, ... } @ inputs: {
+    outputs = { nixpkgs, home-manager, aagl, zen-browser, ... } @ inputs: {
         nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
             specialArgs = { inherit inputs; };
             modules = [
