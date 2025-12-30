@@ -22,6 +22,7 @@
    };
 
     environment.systemPackages = with pkgs; [
+        polkit_gnome
         swww
         wlr-randr
         nautilus
