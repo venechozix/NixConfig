@@ -56,7 +56,6 @@
       # ===== Emoji =====
       noto-fonts-color-emoji
       twitter-color-emoji
-      joypixels
 
       # ===== Retro / Pixel =====
       cozette
