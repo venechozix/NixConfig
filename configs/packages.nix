@@ -31,8 +31,6 @@
       roboto
       roboto-slab
       noto-fonts
-      noto-fonts-extra
-      noto-fonts-cjk-sans
       open-sans
       source-sans
       work-sans
