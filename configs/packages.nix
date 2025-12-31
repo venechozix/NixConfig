@@ -15,9 +15,6 @@
       inconsolata
       iosevka
       victor-mono
-      dejavu-fonts
-      dina-font
-      terminus_font
 
       # ===== Nerd Fonts (patched) =====
       nerd-fonts.jetbrains-mono
@@ -27,8 +24,6 @@
       nerd-fonts.caskaydia-cove
       nerd-fonts.meslo-lg
       nerd-fonts.inconsolata
-      nerd-fonts.ubuntu-mono
-      nerd-fonts.victor-mono
       nerd-fonts.symbols-only
 
       # ===== Sans-serif / UI =====
@@ -38,10 +33,7 @@
       noto-fonts
       noto-fonts-extra
       noto-fonts-cjk-sans
-      ubuntu_font_family
       open-sans
-      cantarell-fonts
-      liberation-fonts
       source-sans
       work-sans
       oxygenfonts
