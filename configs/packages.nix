@@ -3,13 +3,89 @@
 
     programs.zsh.enable = true;
 
+    
     fonts.packages = with pkgs; [
-        jetbrains-mono
-        font-awesome
-        nerd-fonts.jetbrains-mono
+      # ===== Monospace / Coding =====
+      jetbrains-mono
+      fira-code
+      fira-code-symbols
+      cascadia-code
+      source-code-pro
+      hack-font
+      inconsolata
+      ubuntu-mono
+      iosevka
+      victor-mono
+      anonymous-pro
+      liberation-mono
+      dejavu-fonts
+      dina-font
+      terminus_font
+
+      # ===== Nerd Fonts (patched) =====
+      nerd-fonts.jetbrains-mono
+      nerd-fonts.fira-code
+      nerd-fonts.hack
+      nerd-fonts.iosevka
+      nerd-fonts.caskaydia-cove
+      nerd-fonts.meslo-lg
+      nerd-fonts.inconsolata
+      nerd-fonts.ubuntu-mono
+      nerd-fonts.victor-mono
+      nerd-fonts.symbols-only
+
+      # ===== Sans-serif / UI =====
+      inter
+      roboto
+      roboto-slab
+      noto-fonts
+      noto-fonts-extra
+      noto-fonts-cjk-sans
+      ubuntu_font_family
+      open-sans
+      cantarell-fonts
+      liberation-fonts
+      source-sans
+      work-sans
+      oxygenfonts
+      montserrat
+      poppins
+
+      # ===== Serif =====
+      noto-fonts-cjk-serif
+      source-serif
+      libre-baskerville
+      merriweather
+      crimson
+      eb-garamond
+
+      # ===== Symbols / Icons =====
+      font-awesome
+      material-design-icons
+      material-icons
+      powerline-fonts
+      powerline-symbols
+
+      # ===== Emoji =====
+      noto-fonts-emoji
+      twitter-color-emoji
+      joypixels
+
+      # ===== Retro / Pixel =====
+      cozette
+      spleen
+      tamzen
+      creep
     ];
 
     fonts.fontconfig.enable = true;
+
+    fonts.fontconfig.defaultFonts = {
+        monospace = [ "JetBrainsMono Nerd Font" ];
+        sansSerif = [ "Inter" "Noto Sans" ];
+        serif = [ "Noto Serif" ];
+        emoji = [ "Noto Color Emoji" ];
+    };
 
     virtualisation.docker = {
         enable=true;    
