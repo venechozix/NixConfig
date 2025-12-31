@@ -15,7 +15,6 @@
       inconsolata
       iosevka
       victor-mono
-      liberation-mono
       dejavu-fonts
       dina-font
       terminus_font
