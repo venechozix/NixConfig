@@ -13,7 +13,6 @@
       source-code-pro
       hack-font
       inconsolata
-      ubuntu-mono
       iosevka
       victor-mono
       anonymous-pro
