@@ -54,7 +54,7 @@
       powerline-symbols
 
       # ===== Emoji =====
-      noto-fonts-emoji
+      noto-fonts-color-emoji
       twitter-color-emoji
       joypixels
 
