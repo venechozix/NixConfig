@@ -6,6 +6,7 @@
         vulkan-tools
         vulkan-loader
         vulkan-validation-layers
+        vkbasalt
         bluetui
         mangohud
         goverlay
