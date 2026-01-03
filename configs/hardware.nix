@@ -7,7 +7,7 @@
         vulkan-loader
         vulkan-validation-layers
         bluetui
-        mangohudi
+        mangohud
         goverlay
     ];
 
