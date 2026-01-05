@@ -22,6 +22,7 @@
 
     environment.systemPackages = with pkgs; [
         #gaming
+        ryubing
         protonup-qt
         opentabletdriver
         osu-lazer-bin
