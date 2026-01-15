@@ -10,6 +10,8 @@
             dataDir = "/home/chozix/";    # Default folder for new synced folders
             configDir = "/home/chozix/.config/syncthing";   # Folder for Syncthing's settings and keys
     };
+    
+    services.logmein-hamachi.enable = true;
 
     services.udisks2.enable = true;
 
@@ -20,6 +22,10 @@
     };
 
     # You might also need networking tools
-    environment.systemPackages = with pkgs; [ openvpn wget ];
+    environment.systemPackages = with pkgs; [ 
+    openvpn 
+    wget
+    haguichi
+    ];
 
 }
