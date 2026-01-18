@@ -30,7 +30,7 @@
         heroic-unwrapped
         glib
         glib-networking
-        prismlauncher
+        prismlauncher-unwrapped
         dconf
     ];
 
