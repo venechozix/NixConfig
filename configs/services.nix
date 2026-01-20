@@ -14,6 +14,8 @@
 
     services.udisks2.enable = true;
 
+    services.flatpak.enable = true;
+
 
     #vpn
     programs.openvpn3 = {
