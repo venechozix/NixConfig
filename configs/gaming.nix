@@ -32,7 +32,6 @@
         glib-networking
         prismlauncher-unwrapped
         dconf
-        protonplus
     ];
 
 }
