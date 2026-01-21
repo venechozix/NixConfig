@@ -16,7 +16,6 @@
 
     services.flatpak.enable = true;
 
-
     #vpn
     programs.openvpn3 = {
         enable = true;
@@ -24,8 +23,8 @@
 
     # You might also need networking tools
     environment.systemPackages = with pkgs; [ 
-    openvpn 
-    wget
+        openvpn 
+        wget
     ];
 
 }

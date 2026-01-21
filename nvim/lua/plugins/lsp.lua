@@ -7,12 +7,28 @@ vim.lsp.config("lua_ls", {
     Lua = {
       diagnostics = { globals = { "vim" } },
       workspace = { checkThirdParty = false },
+      format = {
+        enable = true,
+        defaultConfig = {
+            indent_style = "space",
+            indent_size = "4",
+        },
+      },
     },
   },
 })
 
 -- Nix
-vim.lsp.config("nil_ls", { capabilities = capabilities })
+vim.lsp.config("nil_ls", {
+    capabilities = capabilities,
+    settings = {
+        ["nil"] = {
+            formatting = {
+                command = {"nixfmt"}
+            },
+        },
+    },
+})
 
 -- Enable servers
 vim.lsp.enable({

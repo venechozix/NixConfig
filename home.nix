@@ -30,8 +30,6 @@
         nvim-treesitter-textobjects
         
         nvim-lspconfig
-        mason-nvim        # optional (see note)
-        mason-lspconfig-nvim
         cmp-nvim-lsp
         nvim-cmp
         cmp-buffer
@@ -65,6 +63,10 @@
         #Language Servers
         lua-language-server
         nil # Nix
+
+        #Formatters and linters
+        stylua
+        nixfmt-rfc-style 
       ];
 
 	};
