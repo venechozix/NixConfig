@@ -23,13 +23,27 @@
 	  viAlias = true;
 	  vimAlias = true;
 
-	  # Add plugins
 	  plugins = with pkgs.vimPlugins; [
 	    telescope-nvim
-	    plenary-nvim # Required dependency for Telescope
+	    plenary-nvim 
         catppuccin-vim
+        nvim-treesitter-textobjects
+        
+        (nvim-treesitter.withPlugins (p: [
+            p.bash
+            p.c
+            p.lua
+            p.python
+            p.javascript
+            p.typescript
+            p.json
+            p.html
+            p.css
+            p.markdown
+            p.markdown_inline
+          ]))
 	  ];
-      # Add system tools used by Telescope
+
       extraPackages = with pkgs; [
         fd
         ripgrep

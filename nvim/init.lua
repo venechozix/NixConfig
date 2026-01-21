@@ -1,6 +1,6 @@
 require("config.keymaps")
 require("plugins.telescope")
-
+require("plugins.treesitter")
 
 -- General Configurations
 
