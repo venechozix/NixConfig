@@ -2,6 +2,7 @@ require("config.keymaps")
 require("plugins.telescope")
 require("plugins.treesitter")
 require("plugins.lsp")
+require("plugins.cmp")
 -- General Configurations
 
 vim.cmd("colorscheme catppuccin_macchiato")
