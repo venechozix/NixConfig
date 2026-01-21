@@ -29,6 +29,17 @@
         catppuccin-vim
         nvim-treesitter-textobjects
         
+        nvim-lspconfig
+        mason-nvim        # optional (see note)
+        mason-lspconfig-nvim
+        cmp-nvim-lsp
+        nvim-cmp
+        cmp-buffer
+        cmp-path
+        cmp-cmdline
+        cmp-nvim-lsp-signature-help
+
+
         (nvim-treesitter.withPlugins (p: [
             p.bash
             p.c
@@ -50,6 +61,10 @@
       extraPackages = with pkgs; [
         fd
         ripgrep
+
+        #Language Servers
+        lua-language-server
+        nil # Nix
       ];
 
 	};
