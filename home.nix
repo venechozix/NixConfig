@@ -41,6 +41,9 @@
             p.css
             p.markdown
             p.markdown_inline
+            p.nix
+            p.go
+            p.rust
           ]))
 	  ];
 
