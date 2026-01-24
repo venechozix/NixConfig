@@ -89,7 +89,7 @@
     enable = true;
     mouse = true;
     baseIndex = 1;
-    shortcut = "a";
+    shortcut = "Space";
     terminal = "tmux-256color";
 
     plugins = with pkgs.tmuxPlugins; [
