@@ -93,6 +93,9 @@
     terminal = "tmux-256color";
 
     extraConfig = ''
+
+      set -g @catppuccin_flavour "mocha"
+
       bind -n M-H previous-window
       bind -n M-L next-window
     '';
