@@ -36,6 +36,8 @@
       catppuccin-vim
       nvim-treesitter-textobjects
 
+      vim-tmux-navigator
+
       nvim-lspconfig
       cmp-nvim-lsp
       nvim-cmp
@@ -93,6 +95,7 @@
     plugins = with pkgs.tmuxPlugins; [
       sensible
       yank
+      vim-tmux-navigator
 
     ];
   };
