@@ -92,10 +92,15 @@
     shortcut = "Space";
     terminal = "tmux-256color";
 
+    extraConfig = ''
+      bind -n M-H previous-window
+      bind -n M-L next-window
+    '';
     plugins = with pkgs.tmuxPlugins; [
       sensible
       yank
       vim-tmux-navigator
+      catpuccin
 
     ];
   };
