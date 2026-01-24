@@ -89,7 +89,7 @@
     enable = true;
     mouse = true;
     baseIndex = 1;
-    shortcut = "Space";
+    shortcut = "a";
     terminal = "tmux-256color";
 
     plugins = with pkgs.tmuxPlugins; [
@@ -115,6 +115,7 @@
   };
 
   # - END OF GIT -
+
   home.pointerCursor = {
     enable = true;
     name = "catppuccin-mocha-dark-cursors";
