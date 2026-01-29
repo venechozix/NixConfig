@@ -1,30 +1,33 @@
-{ config, pkgs, ... }: {
-    
-    services.avahi.enable = true;
-    #Syncthing
-    #Todo: Move this to its own file and make the extended config
-    services.syncthing = {
-            enable = true;
-            group = "syncthing";
-            user = "chozix";
-            dataDir = "/home/chozix/";    # Default folder for new synced folders
-            configDir = "/home/chozix/.config/syncthing";   # Folder for Syncthing's settings and keys
-    };
-    
+{ config, pkgs, ... }:
+{
 
-    services.udisks2.enable = true;
+  services.avahi.enable = true;
+  #Syncthing
+  #Todo: Move this to its own file and make the extended config
+  services.syncthing = {
+    enable = true;
+    group = "syncthing";
+    user = "chozix";
+    dataDir = "/home/chozix/"; # Default folder for new synced folders
+    configDir = "/home/chozix/.config/syncthing"; # Folder for Syncthing's settings and keys
+  };
 
-    services.flatpak.enable = true;
+  services.logmein-hamachi.enable = true;
 
-    #vpn
-    programs.openvpn3 = {
-        enable = true;
-    };
+  services.udisks2.enable = true;
 
-    # You might also need networking tools
-    environment.systemPackages = with pkgs; [ 
-        openvpn 
-        wget
-    ];
+  services.flatpak.enable = true;
+
+  #vpn
+  programs.openvpn3 = {
+    enable = true;
+  };
+
+  # You might also need networking tools
+  environment.systemPackages = with pkgs; [
+    openvpn
+    wget
+    haguichi
+  ];
 
 }
