@@ -101,6 +101,7 @@
     python3Packages.sounddevice
     vscodium
     #utils
+    htop
     kdePackages.kdenlive
     readest
     icu77
