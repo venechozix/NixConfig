@@ -1,37 +1,43 @@
-{ config, pkgs, inputs,  ... }: {
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
+{
 
-    
-    #Steam
-    programs.steam = {
-        enable = true;
-        remotePlay.openFirewall = true;
-        dedicatedServer.openFirewall = true;
-        extraCompatPackages =  with pkgs; [
-            proton-ge-bin
-        ];
-        protontricks.enable = true;
-    };
-
-    programs.appimage.enable = true;
-    programs.appimage.binfmt = true;
-
-    hardware.opentabletdriver = {
-        enable = true;
-        daemon.enable = true;
-    };
-
-    environment.systemPackages = with pkgs; [
-        #gaming
-        ryubing
-        protonup-qt
-        opentabletdriver
-        osu-lazer-bin
-        lutris
-        heroic-unwrapped
-        glib
-        glib-networking
-        prismlauncher-unwrapped
-        dconf
+  #Steam
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true;
+    dedicatedServer.openFirewall = true;
+    extraCompatPackages = with pkgs; [
+      proton-ge-bin
     ];
+    protontricks.enable = true;
+  };
+
+  programs.appimage.enable = true;
+  programs.appimage.binfmt = true;
+
+  hardware.opentabletdriver = {
+    enable = true;
+    daemon.enable = true;
+  };
+
+  environment.systemPackages = with pkgs; [
+    #gaming
+    gamescope
+    ryubing
+    protonup-qt
+    opentabletdriver
+    osu-lazer-bin
+    lutris
+    heroic-unwrapped
+    glib
+    glib-networking
+    prismlauncher-unwrapped
+    dconf
+  ];
 
 }
