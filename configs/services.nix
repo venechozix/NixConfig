@@ -12,7 +12,9 @@
     configDir = "/home/chozix/.config/syncthing"; # Folder for Syncthing's settings and keys
   };
 
-  services.logmein-hamachi.enable = true;
+  #  services.logmein-hamachi.enable = true;
+
+  services.zerotierone.enable = true;
 
   services.udisks2.enable = true;
 
@@ -27,7 +29,7 @@
   environment.systemPackages = with pkgs; [
     openvpn
     wget
-    haguichi
+    # haguichi
   ];
 
 }
