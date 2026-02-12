@@ -106,7 +106,6 @@
     kdePackages.kdenlive
     readest
     icu77
-    zoom-us
     pavucontrol
     fastfetch
     spotify
