@@ -101,6 +101,7 @@
     python3Packages.sounddevice
     vscodium
     #utils
+    ncdu
     htop
     kdePackages.kdenlive
     readest
