@@ -126,7 +126,7 @@
 
   home.pointerCursor = {
     enable = true;
-    name = "Yunli";
+    # name = "catppuccin-cursors.mochaDark";
     # package = pkgs.catppuccin-cursors.mochaDark;
     x11.enable = true;
     gtk.enable = true;
