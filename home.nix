@@ -126,12 +126,12 @@
 
   home.pointerCursor = {
     enable = true;
-    name = "catppuccin-mocha-dark-cursors";
-    package = pkgs.catppuccin-cursors.mochaDark;
+    name = "Yunli";
+    # package = pkgs.catppuccin-cursors.mochaDark;
     x11.enable = true;
     gtk.enable = true;
     sway.enable = true;
-    size = 24;
+    size = 12;
   };
 
   gtk = {
