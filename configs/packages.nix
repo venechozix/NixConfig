@@ -101,6 +101,7 @@
     python3Packages.sounddevice
     vscodium
     #utils
+    file
     win2xcur
     ncdu
     htop
