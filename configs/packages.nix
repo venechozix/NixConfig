@@ -101,7 +101,7 @@
     python3Packages.sounddevice
     vscodium
     #utils
-    clickgen
+    win2xcur
     ncdu
     htop
     kdePackages.kdenlive
