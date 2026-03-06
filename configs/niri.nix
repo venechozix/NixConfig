@@ -20,6 +20,9 @@
 
     # 2. Crucial fix: Disables the GTK-style title bar (libdecor)
     SDL_VIDEO_WAYLAND_PREFER_LIBDECOR = "0";
+
+    # 3. Removes client-side decorations (title bars) from GTK apps
+    GTK_CSD = "0";
   };
 
   environment.systemPackages = with pkgs; [
