@@ -1,23 +1,23 @@
-{ config, pkgs, ...}:
+{ config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      ./configs/hardware.nix
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    ./configs/hardware.nix
 
-      ./configs/packages.nix
-      ./configs/gaming.nix
-      ./configs/user.nix
-      ./configs/locale.nix
-      ./configs/services.nix
+    ./configs/packages.nix
+    ./configs/gaming.nix
+    ./configs/user.nix
+    ./configs/locale.nix
+    ./configs/services.nix
 
-      #./configs/kde.nix
-      ./configs/niri.nix
-    ];
+    #./configs/kde.nix
+    ./configs/niri.nix
+  ];
 
   boot.initrd.kernelModules = [ "amdgpu" ];
-  
+
   hardware.graphics.enable = true;
   services.xserver.enable = true;
   services.xserver.videoDrivers = [ "amdgpu" ];
@@ -27,7 +27,6 @@
   ];
   boot.kernelModules = [ "i2c-dev" ];
 
-
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -35,21 +34,26 @@
   networking.hostName = "nixos"; # Define your hostname.
   networking.networkmanager.enable = true;
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   # Set your time zone.
   time.timeZone = "America/Montevideo";
 
+  #services.greetd = {
+  #  enable = true;
+  #  settings = {
+  #    default_session = {
+  #      command = "niri-session";
+  #      user = "chozix";
+  #    };
+  #  };
+  #};
 
-    services.greetd = {
-      enable = true;
-      settings = {
-        default_session = {
-          command = "niri-session";
-          user = "chozix";
-        };
-      };
-    };
+  services.displayManager.gdm.enable = true;
+  services.displayManager.gdm.wayland = true;
 
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
@@ -62,7 +66,6 @@
   };
 
   nixpkgs.config.allowUnfree = true;
-
 
   system.stateVersion = "25.11"; # Did you read the comment?
 }
