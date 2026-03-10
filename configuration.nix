@@ -38,18 +38,15 @@
   # Set your time zone.
   time.timeZone = "America/Montevideo";
 
-  # services.greetd = {
-  #   enable = true;
-  #   settings = {
-  #     default_session = {
-  #       command = "${pkgs.tuigreet}/bin/tuigreet --time --remember --cmd niri-session";
-  #       user = "greeter";
-  #     };
-  #   };
-  # };
-
-  services.displayManager.gdm.enable = true;
-  services.displayManager.gdm.wayland = true;
+  services.greetd = {
+    enable = true;
+    settings = {
+      default_session = {
+        command = "${pkgs.tuigreet}/bin/tuigreet --time --remember --cmd niri-session";
+        user = "greeter";
+      };
+    };
+  };
 
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
