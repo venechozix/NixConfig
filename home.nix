@@ -163,5 +163,6 @@
     chatterino7
     brave
     qbittorrent
+    koodo-reader
   ];
 }
