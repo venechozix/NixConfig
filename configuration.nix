@@ -16,6 +16,8 @@
     ./configs/niri.nix
   ];
 
+  boot.kernelPackages = pkgs.linuxPackages_6_16;
+
   boot.initrd.kernelModules = [ "amdgpu" ];
 
   hardware.graphics.enable = true;
