@@ -16,7 +16,7 @@
     ./configs/niri.nix
   ];
 
-  boot.kernelPackages = pkgs.pkgs.linuxPackages_6_19;
+  boot.kernelPackages = pkgs.pkgs.linuxPackages_6_12;
 
   boot.initrd.kernelModules = [ "amdgpu" ];
 
