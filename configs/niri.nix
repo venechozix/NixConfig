@@ -37,5 +37,6 @@
     swayidle
     xwayland-satellite
     eog
+    eww
   ];
 }
