@@ -59,13 +59,17 @@
     alsa.support32Bit = true;
     pulse.enable = true;
 
+    wireplumber.extraConfig."10-disable-agc" = {
+    "monitor.alsa.properties" = {
+      "capture.auto_gain_control" = false;
+    };
     extraConfig.pipewire."92-low-latency" = {
-      "context.properties" = {
-        "default.clock.rate" = 48000;
-        "default.clock.quantum" = 32;
-        "default.clock.min-quantum" = 32;
-        "default.clock.max-quantum" = 32;
-      };
+        "context.properties" = {
+          "default.clock.rate" = 48000;
+          "default.clock.quantum" = 32;
+          "default.clock.min-quantum" = 32;
+          "default.clock.max-quantum" = 32;
+        };
     };
   };
 
