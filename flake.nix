@@ -13,6 +13,8 @@
     };
 
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
+
+    nix-gaming.url = "github:fufexan/nix-gaming";
   };
 
   outputs =
@@ -21,6 +23,7 @@
       home-manager,
       aagl,
       zen-browser,
+      nix-gaming,
       ...
     }@inputs:
     {
@@ -41,7 +44,7 @@
           }
           {
             imports = [ aagl.nixosModules.default ];
-            nix.settings = aagl.nixConfig; # Set up Cachix
+            nix.settings = aagl.nixConfig;
             programs.sleepy-launcher.enable = true;
             programs.honkers-railway-launcher.enable = true;
           }
