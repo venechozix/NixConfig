@@ -21,7 +21,6 @@
     {
       nixpkgs,
       home-manager,
-      aagl,
       ...
     }@inputs:
     {
