@@ -22,8 +22,6 @@
       nixpkgs,
       home-manager,
       aagl,
-      zen-browser,
-      nix-gaming,
       ...
     }@inputs:
     {
